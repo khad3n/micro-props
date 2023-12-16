@@ -24,3 +24,12 @@ eureka:
 logging:
   pattern:
     console: '%C{1.} [%-5level] %d{HH:mm:ss} - %msg%n'
+
+management:
+  endpoint:
+    gateway:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: *
